@@ -101,7 +101,8 @@ Y8 2017 Spring  2017/5/27
     Linux上の.NET Coreプロセスは通常のプロセス
 
   .NET Coreの周りの話、マニアックな話など、面白かった。
-   
+  
+  https://docs.com/tanaka-takayosh/8840/20170527-inside-dotnet-core-on-linux 
  
 ■ScalaでウェブAPIを書いている人が設計や実装やその他について話そうか by たっくん
   メディロムという会社
