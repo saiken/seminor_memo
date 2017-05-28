@@ -27,6 +27,7 @@ Y8 2017 Spring  2017/5/27
     https://www.slideshare.net/expajp/pm1-76397528
 
   所感
+    PMをやってみて、身についたことなどの紹介話。
     PMといっても案件や現場によって、いろいろ違うんだなという印象。
 
 
@@ -76,6 +77,7 @@ Y8 2017 Spring  2017/5/27
     https://github.com/hyperapp/hyperapp
 
   所感
+    hyperappというJSのフレームワークを作った人の話。
     あまりちゃんと聞いていなかったが、
     確かにブラウザのリロードはめんどくさいと感じる時代になってきた感がある。
 
@@ -175,6 +177,7 @@ Y8 2017 Spring  2017/5/27
     https://speakerdeck.com/takkkun/scaladeuebuapiwoshu-iteiruren-gashe-ji-yashi-zhuang-yasofalseta-nituitehua-souka
 
   所感
+    DDDをどうやって、Scalaで実現したか、というような話。
     若干、無理やりDDDを取り入れている感があって、そこまでする必要があるんだろうか。
     周囲のメンバーに反対されそう。
     ただ、I/Fと実装でプロジェクトを分けるなど、よく考えられていて、勉強になった。
