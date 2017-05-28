@@ -1,0 +1,150 @@
+Y8 2017 Spring  2017/5/26
+
+■インフラエンジニアのWEBアプリ入門のススメ by おざしゅー
+  聞きたかったけど、間に合わなかった。
+  スライドはこちら
+  https://speakerdeck.com/ozashu/inhuraenziniafalsewebapuriru-men
+
+■PMを目指して1年が経った by expa（えくすぱ、と読みます）
+  新卒２年目だそう
+
+  ITの世界で生きていきたいが、技術的にキビしかった
+    → マネジメントも好きだったので、こっちにした
+
+  営業よりのPMをやっていた
+  やりたかったのは、エンジニアよりのものだった
+    → がむしゃらにインプットをし続けたことで、
+      自分のやりたいことに気づけたし、勉強になった
+
+  https://www.slideshare.net/expajp/pm1-76397528
+
+■WordPress のサイトを Rails にしたはなし by motchang
+  ひかかくというサイトの開発
+
+  記事が大量すぎてデータがどうにもならなくなっていた。
+  エンジニアが早く移行したかった
+  営業とエンジニアが1日会議して移行が決まった
+
+  Rails移行(ようは、Rails で全て作り直した)
+    ・URLはSEOの観点から、止めたくない
+      nginx でrewrite してRails 側に投げる。今、locationが100こくらい書かれている
+        移行完了後は、ここを消していきたい
+
+    ・無停止で移行 徐々に実装し、できたものから順次リリース
+
+      Rails 用とワードプレス用とでスキーマを分けた
+        その結果、Rails用DBに書き込んだ結果をWP用DBに書き戻すフックが発生
+        フックでエラーが起きても、裏でバッチで日次で整合性が保たれるように。
+
+  まとめ
+    かなり辛いものの、Rails移行はできる
+
+  https://speakerdeck.com/motchang/wordpressfalsesaitoworailsnisitahanasi
+
+■hyperapp – 1kbのビューライブラリ by Jorge Bucaran (ジョージ)
+  quiita の開発をしている
+
+  Reactは大きすぎ。LightWeightな物が欲しくて作った。
+  React:50kb, hyperapp:1kb
+
+  hyperapp
+   → SPA なページを作るためのJSのフレームワーク
+
+  Single Page Application
+   → ブラウザがリロードなしで、色々な情報を取得して表示する
+
+  https://github.com/hyperapp/hyperapp
+
+
+■MySQLサーバーのパフォーマンスチューニング by まみー
+
+  最初,週に１度DBサーバがダウンしていた
+
+  my.cnf
+    ほぼデフォルト設定で運用されていた
+    ・データファイルをテーブルごとに変更(file per table の設定)
+        既存のテーブルには反映されないので、dumpしてリストアして再作成した
+    ・メモリの設定
+        innodb_buffer_pool_size
+        innodb_log_file_size
+
+    その他クエリキャッシュなど。
+    秒間5リクエストで一杯一杯だったのが、200リクエストまでさばけるようになっった
+
+  クエリキャッシュの設定の仕方とか。
+    83%のhit率を実現
+
+  レプリケーションの設定の仕方の話
+
+  MySQLのチューニングをする上で重要なことが多かったが、初歩的な内容。
+  https://speakerdeck.com/mamy1326/mysql-first-performance-tuning-y8
+
+■.NET Core がLinuxでどのように動いているか、またわれわれはどのようにデバッグするのか by たなか
+  Red hatの人
+
+   .NET Framework
+   .NET Core
+   Xamarin
+
+  OS上の固有の処理
+    通常のif 文
+    コンパイラスイッチ
+   → パフォーマンスやコードの見通しが悪くなる
+   → OSごとに参照するdllを差し替えるようになった
+
+  Linux はVSCodeでデバッグ
+  I/F が同じなので、WindowsからLinux へのリモートデバッグできるようになった
+    去年くらいにSSHでできるようになった
+
+  まとめ
+    .NET CoreのクラスライブラリでOS固有の処理ではP/invokeが大活躍
+    Linux上の.NET Coreプロセスは通常のプロセス
+
+  .NET Coreの周りの話、マニアックな話など、面白かった。
+   
+ 
+■ScalaでウェブAPIを書いている人が設計や実装やその他について話そうか by たっくん
+  メディロムという会社
+
+  レイヤードアーキテクチャを採用
+    プレゼンテーション、アプリケーション、ドメイン、インフラ
+
+    依存関係逆転の原則を適用(DIP)
+      Clean Architecure っぽい作り
+      インフラ層のI/F をドメイン層側にもつ。
+
+    ドメイン層には、機能要件のみ入れる
+      DDD で考える
+       値オブジェクトを作るときは、scalaのsealed trait , privateなcaseクラスを利用
+       エンティティ内に識別子
+
+  DDDへの取り組み
+    実践ドメイン駆動設計をチームで輪読
+    週１の定例ミーティングで、ユビキタス言語の振り返り
+
+  アプリケーション層の役割
+    アプリケーションが持っていなきゃいけない振る舞いの提供
+    ドメイン層のオブジェクトを利用して振る舞いを実現
+    振る舞いのみなので、層は薄くなる
+    コマンドは、ドメイン層を経由。クエリ（参照）は直接データストアを参照。
+
+  プレゼンテーション層
+    Scalatraを採用
+
+  データストア
+    scalikeJDBC を利用
+
+  その他
+    複数のプロジェクトに分割
+    ドメイン層は基本別プロジェクトに。
+    テストは、ScalaTestを使用。
+
+  https://speakerdeck.com/takkkun/scaladeuebuapiwoshu-iteiruren-gashe-ji-yashi-zhuang-yasofalseta-nituitehua-souka
+
+■まきさんの話（ピンチヒッター）
+  Go 書いている
+  fork ばかりしている
+    PullReqしてない
+    APIを変えたい
+     → PullReqしても拒否されるから.
+
