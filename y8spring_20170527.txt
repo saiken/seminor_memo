@@ -2,8 +2,10 @@ Y8 2017 Spring  2017/5/27
 
 ■インフラエンジニアのWEBアプリ入門のススメ by おざしゅー
   聞きたかったけど、間に合わなかった。
-  スライドはこちら
-  https://speakerdeck.com/ozashu/inhuraenziniafalsewebapuriru-men
+
+  スライド
+    https://speakerdeck.com/ozashu/inhuraenziniafalsewebapuriru-men
+
 
 ■PMを目指して1年が経った by expa（えくすぱ、と読みます）
   新卒２年目だそう
@@ -16,7 +18,12 @@ Y8 2017 Spring  2017/5/27
     → がむしゃらにインプットをし続けたことで、
       自分のやりたいことに気づけたし、勉強になった
 
-  https://www.slideshare.net/expajp/pm1-76397528
+  スライド
+    https://www.slideshare.net/expajp/pm1-76397528
+
+  所感
+    PMといっても案件や現場によって、いろいろ違うんだなという印象。
+
 
 ■WordPress のサイトを Rails にしたはなし by motchang
   ひかかくというサイトの開発
@@ -39,7 +46,13 @@ Y8 2017 Spring  2017/5/27
   まとめ
     かなり辛いものの、Rails移行はできる
 
-  https://speakerdeck.com/motchang/wordpressfalsesaitoworailsnisitahanasi
+  スライド
+    https://speakerdeck.com/motchang/wordpressfalsesaitoworailsnisitahanasi
+  
+  所感
+    実行形式をRailsに変えただけの話かと思ったら、まるまる作り直したという話だった。
+    無停止移行にしないで、潔く半日メンテくらいで一気に移行した方が、
+    結果的にコストとかやすそうな気がするけど。。
 
 ■hyperapp – 1kbのビューライブラリ by Jorge Bucaran (ジョージ)
   quiita の開発をしている
@@ -53,7 +66,12 @@ Y8 2017 Spring  2017/5/27
   Single Page Application
    → ブラウザがリロードなしで、色々な情報を取得して表示する
 
-  https://github.com/hyperapp/hyperapp
+  スライド
+    https://github.com/hyperapp/hyperapp
+
+  所感
+    あまりちゃんと聞いていなかったが、
+    確かにブラウザのリロードはめんどくさいと感じる時代になってきた感がある。
 
 
 ■MySQLサーバーのパフォーマンスチューニング by まみー
@@ -76,8 +94,11 @@ Y8 2017 Spring  2017/5/27
 
   レプリケーションの設定の仕方の話
 
-  MySQLのチューニングをする上で重要なことが多かったが、初歩的な内容。
-  https://speakerdeck.com/mamy1326/mysql-first-performance-tuning-y8
+  スライド
+    https://speakerdeck.com/mamy1326/mysql-first-performance-tuning-y8
+
+  所感
+    MySQLのチューニングをする上で重要なことが多かったが、初歩的な内容。
 
 ■.NET Core がLinuxでどのように動いているか、またわれわれはどのようにデバッグするのか by たなか
   Red hatの人
@@ -100,10 +121,14 @@ Y8 2017 Spring  2017/5/27
     .NET CoreのクラスライブラリでOS固有の処理ではP/invokeが大活躍
     Linux上の.NET Coreプロセスは通常のプロセス
 
-  .NET Coreの周りの話、マニアックな話など、面白かった。
-  
-  https://docs.com/tanaka-takayosh/8840/20170527-inside-dotnet-core-on-linux 
- 
+  スライド  
+    https://docs.com/tanaka-takayosh/8840/20170527-inside-dotnet-core-on-linux 
+
+  所感
+    最近、C#周りに関わることがあるせいか、面白かった。
+    .NET FrameWork とかC#周りのややこしい関連用語とかが整理できてよかった。
+    マニアックな話もあった。
+
 ■ScalaでウェブAPIを書いている人が設計や実装やその他について話そうか by たっくん
   メディロムという会社
 
@@ -140,7 +165,13 @@ Y8 2017 Spring  2017/5/27
     ドメイン層は基本別プロジェクトに。
     テストは、ScalaTestを使用。
 
-  https://speakerdeck.com/takkkun/scaladeuebuapiwoshu-iteiruren-gashe-ji-yashi-zhuang-yasofalseta-nituitehua-souka
+  スライド
+    https://speakerdeck.com/takkkun/scaladeuebuapiwoshu-iteiruren-gashe-ji-yashi-zhuang-yasofalseta-nituitehua-souka
+
+  所感
+    若干、無理やりDDDを取り入れている感があって、そこまでする必要があるんだろうか。
+    周囲のメンバーに反対されそう。
+    ただ、I/Fと実装でプロジェクトを分けるなど、よく考えられていて、勉強になった。
 
 ■まきさんの話（ピンチヒッター）
   Go 書いている
