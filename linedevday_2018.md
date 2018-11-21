@@ -1,6 +1,7 @@
 # LINE Developer Day2018
 ## 全体
 AI関連のトークが多い
+LIFFの話も多かった
 
 ### ネタ
 意外と硬い雰囲気  
@@ -9,6 +10,7 @@ wifi完備
 準備大変そう これ用に公式アカウントとかcwaとか  
 スライドが英語  
 
+--- 
 ## 10:40 Opening Session - "Next LINE" LINEが創る新たな世界 -
 朴イビン LINE / CTO  
 open api でいろいろ利用できるものが増えている  
@@ -71,6 +73,7 @@ Pay利用者 4000万人
 
 今後LINEはクロージング the Distanceを掲げて、金融と皆さんの距離を縮めて行きたい
 
+--- 
 ## パネルディスカッション: グローバルな組織で働くエンジニアから見たLINEのエンジニアカルチャー
 LINEエンジニアの人数：2,100人　→　3,000人目指す  
 海外の人が多い
@@ -84,6 +87,7 @@ Be Open
 Trust & Respect  
 　基本的にMicroServiceな作りになっており、連携先のシステムを信頼して動いている  
 
+--- 
 ## LINEのインフラプラットフォームはどのように大規模サービスをスケールさせ運用コストの小さなインフラを提供しているのか
 LINEではOSレイヤー以下をインフラチームが担当 &  storage領域(DBなど)
 
@@ -140,7 +144,8 @@ LINEのインフラのPrivate Cloud化
 　　Knative
 
 
-##フロントエンド開発によって進化するLINEの未来
+--- 
+## フロントエンド開発によって進化するLINEの未来
 ### フロントエンドチームの組織について
 UITチーム(UserInterfaceTechnology)  
 海外含め7拠点、100名以上のエンジニア  
@@ -177,6 +182,7 @@ LIFF(LineFrontendFramework)
 　LIFF SDKを使うと、MessagingAPIのユーザーtoユーザーのメッセージ送信が簡単にできる  
 　すでに500以上のLIFFアプリケーションがある  
 
+--- 
 ## LINE QR Code Loginとそれを支える技術
 尾上良範  
 LINE / DP2チーム  
@@ -189,7 +195,26 @@ Spring5.0から導入されたSpring WebFluxを利用
 　→　SpringMVCでやると、1リクエスト1スレッドになるので、待機スレッドが枯渇する  
 　→　WebFluxだと、Servlet機能つかえないので、作り直し大  
 
+--- 
 ## MySQL Query Re-player: パケット解析によるクエリの観測とその再現
 大塚知亮 LINE / DB1チーム  
 
 クエリをパケットキャプチャして、Goの構造体に変換するツール
+
+--- 
+## Closing Session LINEが創る理想のDeveloper Relations
+砂金信一郎 LINE / Developer Relationsチーム  
+
+今日紹介した技術を少しでも利用して欲しい  
+Clovaで開発されたスキル：1125  
+
+### その他のイベント
+LINE Developer Meetup 
+LINE Engineer Blog
+
+### 会社たちあげ
+LINE Growth Technology  
+LINE Financial  
+UITふくしまさん  
+インフラ　かたせさん  
+
