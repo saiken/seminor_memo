@@ -189,3 +189,7 @@ Spring5.0から導入されたSpring WebFluxを利用
 　→　SpringMVCでやると、1リクエスト1スレッドになるので、待機スレッドが枯渇する  
 　→　WebFluxだと、Servlet機能つかえないので、作り直し大  
 
+##MySQL Query Re-player: パケット解析によるクエリの観測とその再現
+大塚知亮 LINE / DB1チーム  
+
+クエリをパケットキャプチャして、Goの構造体に変換するツール
