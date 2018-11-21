@@ -1,4 +1,4 @@
-#LINE Developer Day2018
+# LINE Developer Day2018
 ## 全体
 AI関連のトークが多い
 
@@ -62,7 +62,7 @@ LINE Pay
 Pay利用者 4000万人  
 月の取引額 125Billion
 
-###最近のサービス
+### 最近のサービス
 ・BitBox  
 　仮想通貨  
 ・LINE保険  
@@ -71,11 +71,11 @@ Pay利用者 4000万人
 
 今後LINEはクロージング the Distanceを掲げて、金融と皆さんの距離を縮めて行きたい
 
-##パネルディスカッション: グローバルな組織で働くエンジニアから見たLINEのエンジニアカルチャー
+## パネルディスカッション: グローバルな組織で働くエンジニアから見たLINEのエンジニアカルチャー
 LINEエンジニアの人数：2,100人　→　3,000人目指す  
 海外の人が多い
 
-###LINEの文化
+### LINEの文化
 TakeOwnerShip  
 　自動ログインは、エンジニア発で発信し各サービスに浸透した  
 Be Open  
@@ -141,7 +141,7 @@ LINEのインフラのPrivate Cloud化
 
 
 ##フロントエンド開発によって進化するLINEの未来
-###フロントエンドチームの組織について
+### フロントエンドチームの組織について
 UITチーム(UserInterfaceTechnology)  
 海外含め7拠点、100名以上のエンジニア  
 オフラインでの交流もある(2日間のOSSへの貢献への取り組みなど)
@@ -177,7 +177,7 @@ LIFF(LineFrontendFramework)
 　LIFF SDKを使うと、MessagingAPIのユーザーtoユーザーのメッセージ送信が簡単にできる  
 　すでに500以上のLIFFアプリケーションがある  
 
-##LINE QR Code Loginとそれを支える技術
+## LINE QR Code Loginとそれを支える技術
 尾上良範  
 LINE / DP2チーム  
 サーバサイドは全てkotlin
@@ -189,7 +189,7 @@ Spring5.0から導入されたSpring WebFluxを利用
 　→　SpringMVCでやると、1リクエスト1スレッドになるので、待機スレッドが枯渇する  
 　→　WebFluxだと、Servlet機能つかえないので、作り直し大  
 
-##MySQL Query Re-player: パケット解析によるクエリの観測とその再現
+## MySQL Query Re-player: パケット解析によるクエリの観測とその再現
 大塚知亮 LINE / DB1チーム  
 
 クエリをパケットキャプチャして、Goの構造体に変換するツール
